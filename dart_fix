@@ -1,0 +1,2 @@
+dart fix --dry-run # preview of the proposed changes
+dart fix --apply # apply the changes
