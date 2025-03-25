@@ -1,1 +1,14 @@
 https://codewithandrea.com/tips/fixing-build-issues-nuclear-option/
+
+# Commit to git before making any changes
+git add . && git commit -m "Working copy"
+# Delete android folder
+rm -rf android
+# Create it again with the Flutter CLI
+flutter create . --platforms android
+# See what's changed, reapply previous settings
+git diff
+# Run again
+flutter run
+# All good? Commit to git
+git add . && git commit -m "Updated Android project"
